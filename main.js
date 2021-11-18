@@ -1,7 +1,19 @@
 
 let username;
 let choice;
-
+/*Spela/pausa musiken på sidan*/
+function audioToggle() {
+    const audio = document.querySelector("audio");
+    const paused = audio.paused;
+    const playStart = document.querySelector("material-icons");
+    if (paused) {
+      audio.play();
+      
+    } else {
+      audio.pause();
+      
+    }
+  }
 
 function main() {
     alert('Hej!! Vilken tur att du kunde komma med så kortvarsel, vi hoppas att du kommer att trivas bra här!')
@@ -41,6 +53,7 @@ function sayHello() {
         showGithub();
     } else {
         alert('Var god ange "javascript" eller "github"');
+        sayHello();
     } 
 }
 
@@ -54,7 +67,8 @@ function teachersRoom() {
     } else if (answer === 'nej') {
         sayHello();
     } else {
-        alert ('Var god ange "ja" eller "nej"')
+        alert ('Var god ange "ja" eller "nej"');
+        teachersRoom();
     }
 }
 
@@ -89,6 +103,7 @@ function teachJavascript() {
         alert('Hela klassen är knäpptyst och lyssnar när du pratar om syntax');
     } else {
         alert('Var god ange "grundare" eller "syntax"');
+        teachJavascript();
     }
 }
 
@@ -103,5 +118,5 @@ function showGithub() {
         alert('Klassen jublar!! Dags för kaffe och lite friskluft');
     } else {
         alert('Var god age "fortsätta" eller "bensträckare"')
-    }
+    }   showGithub();
 }
