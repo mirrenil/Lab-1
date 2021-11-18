@@ -1,20 +1,7 @@
-
+// global variabel
 let username;
-let choice;
-/*Spela/pausa musiken på sidan*/
-function audioToggle() {
-    const audio = document.querySelector("audio");
-    const paused = audio.paused;
-    const playStart = document.querySelector("material-icons");
-    if (paused) {
-      audio.play();
-      
-    } else {
-      audio.pause();
-      
-    }
-  }
 
+/*Starta spelet*/
 function main() {
     alert('Hej!! Vilken tur att du kunde komma med så kortvarsel, vi hoppas att du kommer att trivas bra här!')
     const answer = prompt('Gud jag är så stressad att jag glömt vad du heter, påminn mig är du snäll');
@@ -114,9 +101,25 @@ function showGithub() {
 
     if (answer === 'fortsätta') {
         alert('ZZZZzzzzzhhhhhh. Du hör att någon i klassen somnat och nu snarkar högt, du måste byta ämne och prata om något roligare')
+        takeShortBreak();
     } else if (answer === 'bensträckare') {
         alert('Klassen jublar!! Dags för kaffe och lite friskluft');
+        takeShortBreak();
     } else {
-        alert('Var god age "fortsätta" eller "bensträckare"')
+        alert('Var god ange "fortsätta" eller "bensträckare"')
     }   showGithub();
 }
+
+function takeShortBreak() {
+    alert('Dags för en liten rast, vad skönt tänker du men när du ser att en elev kommer och vill prata med dig på din rast blir du svimmfärdig');
+    const answer = prompt('Du har 10 sekunder på dig att springa därifrån eller att gömma dig. Skriv "spring" eller "göm dig"');
+
+    if (answer === 'spring') {
+        alert('Du sprang till toaletten och låste in dig, här får du vara i lugn och ro');
+       
+    } else if (answer === 'göm dig') {
+        alert('Du fick sparken för att du inte pratade med eleven som behövde hjälp');
+        main();
+    }
+}
+
