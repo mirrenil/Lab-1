@@ -24,7 +24,7 @@ function prepareStory() {
     } else if (answer === 'personalrummet') {
         teachersRoom();
     } else {
-        alert('Var god välj att hälsa på klassen eller personalrummet');
+        alert('Var god välj att "hälsa" eller "personalrummet"');
         prepareStory();
     }
 }   
@@ -141,4 +141,5 @@ function finishLecture() {
     alert('Benstärckaren var välbehövlig, nu har du energi att undervisa och köra en demo');
     alert('Alla elever verkar nöjda och visar framsteg, detta kommer att bli en spännande resa att ta del av!');
     alert('Tack och hej FED21G, vi ses imorgon!!');
+    alert('Om du vill spela igen, klicka på den stora gröna knappen!');
 }
