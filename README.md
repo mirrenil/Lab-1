@@ -5,4 +5,8 @@ Du är en lärare och det är din första dag på Medieinstitutet.
 Du startar spelet genom att klicka på den stora gröna knapen.
 Innan du börjar, ta en stund och njut av den fina utsikten.
 
+Du kommer att ha flera olika val under spelets gång. Lycka till!
+
 Project by Miranda Nilhag
+
+Demo: https://mirrenil.github.io/Lab-1/
