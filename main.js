@@ -46,6 +46,9 @@ function sayHello() {
 
 function teachersRoom() {
     alert('Du går in personalrummet och möts av en stark doft av kaffe, och du ser dina nya kollegor sitta och stirra på sina skärmar. Du harklar dig och presenterar dig för kollegorna');
+    alert('Dina kollegor kollar på dig och någon säger "Detta är personalrummet, bara personal får vara här"');
+    alert('Du blir generad och säger blygt "Ehhm jag är den nya läraren"');
+    alert('Alla skrattar och ger om ursäkt.');
 
     const answer = prompt('Du blir medbjuden på lunch på "Vällaget", vill du följa med? Skriv "ja" eller "nej"');
 
