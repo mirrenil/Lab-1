@@ -15,7 +15,7 @@ function main() {
 }
 
 function prepareStory() {
-    alert('Välkommen ' + username + ' ' + ' vi har hört att du är otroligt skicklig på ditt jobb.');
+    alert('Välkommen ' + username + ' ' + ' vi har hört att du är en otroligt skicklig programmerare');
     
     const answer = prompt('Du ska undervisa klass FED21G idag, vill du hälsa på klassen eller gå till personalrummet? Skriv "hälsa" eller "personalrummet"');
 
@@ -65,14 +65,23 @@ function goToLunch() {
     const answer = prompt('Det luktar gott och du känner att det kurrar i magen, vill du ha kött, fisk eller veg?');
      if (answer === 'kött') {
          alert('Idag serveras det köttbullar med klassiska tillbehör');
+         eatLunch();
      } else if (answer === 'fisk') {
         alert('Idag serveras det fisk- och skaldjursgryta');
+        eatLunch();
      } else if (answer === 'veg') {
          alert('Idag serverar vi veggobullar med klassiska tillbehör');
+         eatLunch();
      } else {
          alert ('Var god välj "kött", "fisk", eller "veg"');
          goToLunch();
      }
+}
+
+function eatLunch() {
+    alert('Du är väldigt nöjd med ditt val, hit kommer du att gå flera gånger!');
+    alert('Nu är lunchen slut och du måste skynda dig tillbaka till skolan, det ska bli så kul att hälsa på din nya klass!');
+    sayHello();
 }
 
 function teachJavascript() {
@@ -86,8 +95,10 @@ function teachJavascript() {
     
     if (answer === 'grundare') {
         alert('ZZZZzzzzzhhhhhh. Du hör att någon i klassen somnat och nu snarkar högt, du måste byta ämne och prata om något roligare');
+        teachJavascript();
     } else if (answer === 'syntax') {
         alert('Hela klassen är knäpptyst och lyssnar när du pratar om syntax');
+        takeShortBreak();
     } else {
         alert('Var god ange "grundare" eller "syntax"');
         teachJavascript();
@@ -116,6 +127,7 @@ function takeShortBreak() {
 
     if (answer === 'spring') {
         alert('Du sprang till toaletten och låste in dig, här får du vara i lugn och ro');
+        finishLecture();
        
     } else if (answer === 'göm dig') {
         alert('Du fick sparken för att du inte pratade med eleven som behövde hjälp');
@@ -123,3 +135,8 @@ function takeShortBreak() {
     }
 }
 
+function finishLecture() {
+    alert('Benstärckaren var välbehövlig, nu har du energi att undervisa och köra en demo');
+    alert('Alla elever verkar nöjda och visar framsteg, detta kommer att bli en spännande resa att ta del av!');
+    alert('Tack och hej FED21G, vi ses imorgon!!');
+}
