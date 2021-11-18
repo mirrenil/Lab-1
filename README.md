@@ -9,4 +9,4 @@ Du kommer att ha flera olika val under spelets gång. Lycka till!
 
 Project by Miranda Nilhag
 
-Demo: https://mirrenil.github.io/Lab-1/
+[Demo] (https://mirrenil.github.io/Lab-1/)
