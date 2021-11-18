@@ -131,7 +131,6 @@ function takeShortBreak() {
        
     } else if (answer === 'göm dig') {
         alert('Du fick sparken för att du inte pratade med eleven som behövde hjälp');
-        main();
     }
 }
 
